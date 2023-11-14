@@ -258,50 +258,45 @@ footer section i:hover {
         font-size: 14px;
 }
 
-@media(min-width: 361px) {
-        .burger-menu {
-                display: none;
-        }
-        
-        
-        .ultimavisita, .ofertas {
-                display: flex;
-                flex-wrap: wrap;
-        }
-
-        article {
-                width: 49%;
-        }
-        .logo {
-                width:30%;
-        }
-        .form {
-                width: 30%;
-
-        }
-        .cuotas {
-                width: 30%;
-        }
-
-        .grupo {
-                display: flex;
-        }
-
-       
-        .navegacion {
-                display: flex;
-        }
-        
-
+@media (max-width: 576px) {
+  .burger-menu {
+    display: none;
+  }
+  
+  .ultimavisita, .ofertas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  article {
+    width: 100%; 
+  }
+  
+  .logo {
+    width: 100%; 
+  }
+  
+  .form, .cuotas {
+    width: 100%; 
+  }
+  
+  .grupo, .navegacion {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
 }
 
+@media (min-width: 577px) and (max-width: 992px) {
+  article {
+    width: 50%; 
+  }
 
-@media(min-width:769px) {
-        article {
-                width: 22%;
-        }
+  .logo {
+    width: 40%; 
+  }
 
-        .articulos-footer {
-                display: flex;
-        }
+  .form, .cuotas {
+    width: 40%; 
+  }
 }
